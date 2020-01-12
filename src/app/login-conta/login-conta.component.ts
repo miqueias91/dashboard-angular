@@ -14,8 +14,6 @@ export class LoginContaComponent implements OnInit {
   ngOnInit() {
   }
 
-  title = 'Acesso restrito';
-  numero = 1;
   formLogar = new FormGroup({
     inputUsuario: new FormControl('', Validators.required),
     inputPassword: new FormControl('', Validators.required)
@@ -28,10 +26,10 @@ export class LoginContaComponent implements OnInit {
   get inputPassword(): any { 
     return this.formLogar.get('inputPassword'); 
   }
-   
+  
   logar() {
-      this.numero++;
-      console.log(this.formLogar.value);    
+      console.log(this.formLogar.value);
+      this.router.navigate(['dashboard']);    
   }
 
 }

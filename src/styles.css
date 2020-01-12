@@ -40,6 +40,13 @@ body {
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
     color: #00C1D2!important;
 }
+.navbar-dark .navbar-toggler {
+    color: #00C1D2!important;
+    border-color: #00C1D2;
+}
+.navbar-toggler {
+    background-color: #333;
+}
 .ul1 {
 	margin-right: 500px!important;
 }
@@ -120,7 +127,13 @@ body {
     -ms-user-select: none;
     user-select: none;
   }
-
+  .navbar-brand {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: 1rem;
+    background-color: transparent;
+    box-shadow: none;
+}
   @media (min-width: 768px) {
     .bd-placeholder-img-lg {
       font-size: 3.5rem;

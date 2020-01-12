@@ -45,18 +45,37 @@ body {
 }
 .criarconta {
     border: 1px solid #FF9D55;
-    border-radius: .3rem;
+	border-radius: .3rem;
+	color: #FF9D55!important;
 }
 .navbar-nav .criarconta:hover {
     color: #FFF!important;
     background-color: #FF9D55;
     border-radius: .3rem;
 }
+.navbar-dark .navbar-nav .criarconta:focus {
+    color: #FF9D55;
+}
+.btn-primary:hover {
+    background-color: rgb(238, 137, 65);
+    border-color: rgb(238, 137, 65);
+}
+.btn-primary {
+    background-color: #FF9D55;
+    border-color: #FF9D55;
+}
+.btn-primary:focus {
+    box-shadow: none;
+}
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: #FF9D55;
+    border-color: #FF9D55;
+}
 
 .starter-template {
-	margin-top: 10px;
-padding: 3rem 1.5rem;
-text-align: center;
+    margin-top: 10px;
+    padding: 3rem 1.5rem;
+    text-align: center;
 }
 
 .bd-placeholder-img {

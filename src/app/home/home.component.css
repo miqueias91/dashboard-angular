@@ -2,14 +2,7 @@ h1 {
     font-family: Montserrat-Bold;
     color: #00C1D2!important;
 }
-.btn-primary:hover {
-    background-color: rgb(238, 137, 65);
-    border-color: rgb(238, 137, 65);
-}
-.btn-primary {
-    background-color: #FF9D55;
-    border-color: #FF9D55;
-}
+
 .home-section {
     margin-bottom: 200px;
 }

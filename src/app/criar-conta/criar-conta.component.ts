@@ -11,11 +11,15 @@ export class CriarContaComponent implements OnInit {
   title = 'Criar Conta';
   formCriarConta = new FormGroup({
     inputNovoUsuario: new FormControl('', Validators.required),
-    inputNovaPassword: new FormControl('', Validators.required)
+    inputNovaPassword: new FormControl('', Validators.required),
+    inputNovaPasswordRepeat: new FormControl('', Validators.required),
   });
   constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  criarConta (){
   }
 
 }

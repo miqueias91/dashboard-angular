@@ -1,1 +1,118 @@
-<p>cadastro works!</p>
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top    navbar-expand-md d-flex flex-column">
+      <div class="container-fluid d-flex">
+        <a class="navbar-brand" routerLink="/dashboard" style="line-height: 40px;font-family: Montserrat-Bold;">
+          <img src="assets/img/logo.png" width="40" height="40" class="d-inline-block align-top" alt="">
+          Angular Dashboard
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto ul1">
+            <li class="nav-item">
+              <a class="nav-link link" routerLink="/dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link" routerLink="/dashboard-listagem"><i class="fas fa-th-list"></i> Listagem</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link" routerLink="/dashboard-cadastro"><i class="fas fa-address-card"></i> Cadastrar</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto ul2">
+            <li class="nav-item">
+              <a class="navbar-brand" routerLink="/dashboard" style="line-height: 40px;font-family: Montserrat-Bold;">
+                <img src="assets/data/john_doe_1.jpg" width="40" height="40" class="d-inline-block align-top rounded" alt="">
+                <span style="margin-left: 10px;" class="user">John Doe</span>
+            </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+</header>
+  
+<main role="main">
+    <div class="starter-template text-left">
+        <div class="container">    
+            <h1>{{ titulo }}</h1>
+
+            <form method="POST" id="formCadastrar" class="form-group" [formGroup]="formCadastrar" (ngSubmit)="cadastrar()">
+                <div class="form-group">
+                    <label for="inputNomeCompleto">Nome Completo</label>
+                    <input type="text" class="form-control" id="inputNomeCompleto" placeholder="Nome Completo" ng-required="true" formControlName="inputNomeCompleto">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                    <label for="inputApelido">Apelido</label>
+                    <input type="text" class="form-control" id="inputApelido" placeholder="Apelido" ng-required="true" formControlName="inputApelido">
+                    </div>
+                    <div class="form-group col-md-3">
+                    <label for="inputCPF">CPF</label>
+                    <input type="text" class="form-control cpf" id="inputCPF" placeholder="CPF" ng-required="true" formControlName="inputCPF">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="inputSexo">Sexo</label>
+                        <select id="inputSexo" class="form-control" ng-required="true" formControlName="inputSexo">
+                        <option selected value="">Sexo</option>
+                        <option value="m">Masculino</option>
+                        <option value="f">Feminino</option>
+                        <option value="o">Outros</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="inputNascimento">Nascimento</label>
+                        <input type="text" class="form-control data" id="inputNascimento" placeholder="Nascimento" ng-required="true" formControlName="inputNascimento">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                    <label for="inputCEP">CEP</label>
+                    <input type="text" class="form-control cep" id="inputCEP" placeholder="CEP" ng-required="true" formControlName="inputCEP">
+                    </div>
+                    <div class="form-group col-md-4">
+                    <label for="inputCidade">Cidade</label>
+                    <input type="text" class="form-control" id="inputCidade" placeholder="Cidade" ng-required="true" formControlName="inputCidade">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEstado">Estado</label>
+                        <select id="inputEstado" class="form-control" ng-required="true" formControlName="inputEstado">
+                        <option selected value="">Estado</option>
+                        <option value="mg">Minas Gerais</option>
+                        <option value="sp">São Paulo</option>
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="es">Espírito Santo</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" ng-required="true" formControlName="inputEmail">
+                    </div>
+                    <div class="form-group col-md-4">
+                    <label for="inputTelefone">Telefone</label>
+                    <input type="text" class="form-control telefone" id="inputTelefone" placeholder="Telefone" ng-required="true" formControlName="inputTelefone">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputCelular">Celular</label>
+                        <input type="text" class="form-control celular" id="inputCelular" placeholder="Celular" ng-required="true" formControlName="inputCelular">
+                    </div>
+                </div>
+                <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputUsuario">Usuário</label>
+                    <input type="text" class="form-control" id="inputUsuario" placeholder="Usuário" ng-required="true" formControlName="inputUsuario">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword">Senha</label>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Senha" ng-required="true" formControlName="inputPassword">
+                </div>
+                </div>      
+                <button type="button" class="btn btn-primary">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+</main>

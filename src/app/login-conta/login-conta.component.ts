@@ -14,7 +14,7 @@ export class LoginContaComponent implements OnInit {
   ngOnInit() {
   }
 
-  title = 'Angular Dashboard';
+  title = 'Acesso restrito';
   numero = 1;
   formLogar = new FormGroup({
     inputUsuario: new FormControl('', Validators.required),

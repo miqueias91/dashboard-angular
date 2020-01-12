@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+	font-family: "Montserrat-Bold";
+	src: local(Montserrat),
+	url(../../../assets/fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+	font-family: "Montserrat-Light";
+	src: local(Montserrat),
+	url(../../../assets/fonts/Montserrat-Light.ttf);
+}
+@font-face {
+	font-family: "Montserrat-Regular";
+	src: local(Montserrat),
+	url(../../../assets/fonts/Montserrat-Regular.ttf);
+}
+body {
+	font-family: 'Montserrat-Regular', sans-serif!important;
+	background-color: #f6f7f7!important;
+	padding-top: 5rem;
+}
+h1 {
+    font-family: "Montserrat-Bold";
+    color: #00C1D2;
+}
+.mat-table {
+    background: transparent;
+}
+.mat-table {
+	font-family: 'Montserrat-Regular', sans-serif!important;
+}
+.table th {
+    border-top: 1px solid #333;
+}
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #333!important;
+}
+.mat-header-cell {
+    color: #333!important;
+}
+.mat-header-cell {
+    font-size: 14px!important;
+    font-weight: bold!important;
+    font-family: "Montserrat-Bold"!important;
+}
+.td.mat-cell {
+    border-bottom-color: #333!important;
+}
+.table td, .table th {
+    border-top: 1px solid #333!important;
+}
+.mat-cell {
+    color: #333!important;
+}

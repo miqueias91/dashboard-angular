@@ -48,20 +48,14 @@
     
             <label for="inputPassword" class="sr-only">Senha</label>
             <input type="password" id="inputPassword" class="form-control" placeholder="Digite sua senha" ng-required="true" formControlName="inputPassword">
-            <div class="checkbox mb-3">
-              <label>
-                <input type="checkbox" value="remember-me"> Lembrar usuário e senha
-              </label>
-            </div>
+            <br>
             <div class="mb-3">
               <label>
                 Novo por aqui? <a style="color: #FF9D55;" routerLink="/criar-conta"> crie uma conta agora!</a>
               </label>
             </div>
             <button class="btn btn-lg btn-primary btn-block">Entrar</button>
-            <!--<div *ngIf="inputUsuario.invalid"> Informe o seu usuário. </div>
-            <div *ngIf="inputPassword.invalid"> Informe a sua senha. </div>-->
-            </form>      
+          </form>      
         </div>    
       </div>  
     </div>

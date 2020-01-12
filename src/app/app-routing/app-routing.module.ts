@@ -8,12 +8,18 @@ import {CriarContaComponent  } from "../criar-conta/criar-conta.component";
 import { SobreNosComponent } from "../sobre-nos/sobre-nos.component";
 import { ErrorComponent } from "../error/error.component";
 import { HomeComponent } from "../home/home.component";
+import { DashboardComponent } from "../dashboard/dashboard.component";
+import { ListagemComponent } from "../dashboard/listagem/listagem.component";
+import { CadastroComponent } from "../dashboard/cadastro/cadastro.component";
 
 const appRoutes: Routes = [
   { path: 'login-conta', component: LoginContaComponent },
   { path: 'criar-conta', component: CriarContaComponent },
   { path: 'sobre', component: SobreNosComponent },
   { path: 'home', component: HomeComponent },
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'dashboard-listagem', component: ListagemComponent },
+  { path: 'dashboard-cadastro', component: CadastroComponent },
   { path: '', redirectTo: '/login-conta', pathMatch: 'full' },
   { path: '**', component: ErrorComponent }
 ];

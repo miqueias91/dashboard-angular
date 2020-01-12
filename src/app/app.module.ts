@@ -8,6 +8,9 @@ import { LoginContaComponent } from './login-conta/login-conta.component';
 import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 import { ErrorComponent } from './error/error.component';
 import { HomeComponent } from './home/home.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ListagemComponent } from './dashboard/listagem/listagem.component';
+import { CadastroComponent } from './dashboard/cadastro/cadastro.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +18,10 @@ import { HomeComponent } from './home/home.component';
     LoginContaComponent,
     SobreNosComponent,
     ErrorComponent,
-    HomeComponent
+    HomeComponent,
+    DashboardComponent,
+    ListagemComponent,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,

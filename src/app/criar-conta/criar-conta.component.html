@@ -49,10 +49,10 @@
       <div class="row align-items-center text-center">
     
         <div class="col-12 col-md-12 col-xl-12 offset-xl-12 offset-md-12 order-md-12 my-5">
-          <form method="POST" id="novaConta" class="form-signin" [formGroup]="formNovaConta" (ngSubmit)="novaConta()">
+          <form method="POST" id="criarConta" class="form-signin" [formGroup]="formCriarConta" (ngSubmit)="criarConta()">
 
             <img class="mb-4" src="assets/img/logo.png" width="72" height="72" alt="Logo da api">
-            <h1 class="h3 mb-3 font-weight-normal">{{ titleNovaConta }}</h1>
+            <h1 class="h3 mb-3 font-weight-normal">{{ title }}</h1>
             
             <label for="inputNovoUsuario" class="sr-only">Usuário</label>
             <input type="text" id="inputNovoUsuario" class="form-control" placeholder="Digite seu usuário" autofocus  ng-required="true" formControlName="inputNovoUsuario">

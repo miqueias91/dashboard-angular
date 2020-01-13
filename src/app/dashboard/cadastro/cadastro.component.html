@@ -51,7 +51,7 @@
                     </div>
                     <div class="form-group col-md-3">
                     <label for="inputCPF">CPF</label>
-                    <input type="text" class="form-control cpf" id="inputCPF" placeholder="CPF" ng-required="true" formControlName="inputCPF">
+                    <input type="text" mask="000.000.000-00" class="form-control" id="inputCPF" placeholder="CPF" ng-required="true" formControlName="inputCPF">
                     </div>
                     <div class="form-group col-md-3">
                         <label for="inputSexo">Sexo</label>
@@ -64,13 +64,13 @@
                     </div>
                     <div class="form-group col-md-3">
                         <label for="inputNascimento">Nascimento</label>
-                        <input type="text" class="form-control data" id="inputNascimento" placeholder="Nascimento" ng-required="true" formControlName="inputNascimento">
+                        <input type="text" mask="00/00/0000" class="form-control" id="inputNascimento" placeholder="Nascimento" ng-required="true" formControlName="inputNascimento">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-4">
                     <label for="inputCEP">CEP</label>
-                    <input type="text" class="form-control cep" id="inputCEP" placeholder="CEP" ng-required="true" formControlName="inputCEP">
+                    <input type="text" mask="00.000-000" class="form-control" id="inputCEP" placeholder="CEP" ng-required="true" formControlName="inputCEP">
                     </div>
                     <div class="form-group col-md-4">
                     <label for="inputCidade">Cidade</label>
@@ -94,11 +94,11 @@
                     </div>
                     <div class="form-group col-md-4">
                     <label for="inputTelefone">Telefone</label>
-                    <input type="text" class="form-control telefone" id="inputTelefone" placeholder="Telefone" ng-required="true" formControlName="inputTelefone">
+                    <input type="text" mask="(00) 0000-0000" class="form-control" id="inputTelefone" placeholder="Telefone" ng-required="true" formControlName="inputTelefone">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="inputCelular">Celular</label>
-                        <input type="text" class="form-control celular" id="inputCelular" placeholder="Celular" ng-required="true" formControlName="inputCelular">
+                        <input type="text" mask="(00) 00000-0000" class="form-control" id="inputCelular" placeholder="Celular" ng-required="true" formControlName="inputCelular">
                     </div>
                 </div>
                 <div class="form-row">

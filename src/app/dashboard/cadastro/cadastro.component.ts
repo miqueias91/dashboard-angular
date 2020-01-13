@@ -85,7 +85,7 @@ export class CadastroComponent implements OnInit {
       this.lista_cadastro.push(this.formCadastrar.value);
       localStorage.setItem("lista-cadastro", JSON.stringify(this.lista_cadastro));
       alert("Salvo com sucesso.");
-      this.router.navigate(['dashboard']);    
+      location.reload();
     }
   }
 

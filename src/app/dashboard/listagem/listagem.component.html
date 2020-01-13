@@ -39,38 +39,75 @@
         <div class="container">    
             <h1>{{ titulo }}</h1>
 
+            <div class="table-responsive">
 
-            <table mat-table [dataSource]="dataSource" class="table">
+              <table mat-table [dataSource]="dataSource" class="table">
                 <!--- Note that these columns can be defined in any order.
                       The actual rendered columns are set as a property on the row definition" -->
               
-                <!-- Position Column -->
-                <ng-container matColumnDef="position">
-                  <th scope="col" mat-header-cell *matHeaderCellDef> # </th>
-                  <td scope="row" mat-cell *matCellDef="let element"> {{element.position}} </td>
+                <ng-container matColumnDef="inputNomeCompleto">
+                  <th scope="col" mat-header-cell *matHeaderCellDef> Nome Completo </th>
+                  <td scope="row" mat-cell *matCellDef="let element"> {{element.inputNomeCompleto}} </td>
                 </ng-container>
               
-                <!-- Name Column -->
-                <ng-container matColumnDef="name">
-                  <th scope="col" mat-header-cell *matHeaderCellDef> Name </th>
-                  <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                <ng-container matColumnDef="inputApelido">
+                  <th scope="col" mat-header-cell *matHeaderCellDef> Apelido </th>
+                  <td mat-cell *matCellDef="let element"> {{element.inputApelido}} </td>
                 </ng-container>
               
-                <!-- Weight Column -->
-                <ng-container matColumnDef="weight">
-                  <th scope="col" mat-header-cell *matHeaderCellDef> Weight </th>
-                  <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+                <ng-container matColumnDef="inputCPF">
+                  <th scope="col" mat-header-cell *matHeaderCellDef> CPF </th>
+                  <td mat-cell *matCellDef="let element"> {{element.inputCPF}} </td>
                 </ng-container>
               
-                <!-- Symbol Column -->
-                <ng-container matColumnDef="symbol">
-                  <th scope="col" mat-header-cell *matHeaderCellDef> Symbol </th>
-                  <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+                <ng-container matColumnDef="inputSexo">
+                  <th scope="col" mat-header-cell *matHeaderCellDef> Sexo </th>
+                  <td mat-cell *matCellDef="let element"> {{element.inputSexo}} </td>
                 </ng-container>
-              
+
+                <ng-container matColumnDef="inputNascimento">
+                  <th scope="col" mat-header-cell *matHeaderCellDef> Nascimento </th>
+                  <td mat-cell *matCellDef="let element"> {{element.inputNascimento}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="inputCEP">
+                  <th scope="col" mat-header-cell *matHeaderCellDef> CEP </th>
+                  <td mat-cell *matCellDef="let element"> {{element.inputCEP}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="inputCidade">
+                  <th scope="col" mat-header-cell *matHeaderCellDef> Cidade </th>
+                  <td mat-cell *matCellDef="let element"> {{element.inputCidade}} </td>
+                </ng-container>
+
+                  <ng-container matColumnDef="inputEstado">
+                  <th scope="col" mat-header-cell *matHeaderCellDef> Estado </th>
+                  <td mat-cell *matCellDef="let element"> {{element.inputEstado}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="inputEmail">
+                  <th scope="col" mat-header-cell *matHeaderCellDef> Email </th>
+                  <td mat-cell *matCellDef="let element"> {{element.inputEmail}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="inputTelefone">
+                  <th scope="col" mat-header-cell *matHeaderCellDef> Telefone </th>
+                  <td mat-cell *matCellDef="let element"> {{element.inputTelefone}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="inputCelular">
+                  <th scope="col" mat-header-cell *matHeaderCellDef> Celular </th>
+                  <td mat-cell *matCellDef="let element"> {{element.inputCelular}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="inputUsuario">
+                  <th scope="col" mat-header-cell *matHeaderCellDef> Usuario </th>
+                  <td mat-cell *matCellDef="let element"> {{element.inputUsuario}} </td>
+                </ng-container>              
                 <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
                 <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
               </table>
+            </div>
         </div>
     </div>
 </main>

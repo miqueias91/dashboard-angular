@@ -14,6 +14,7 @@ import { CadastroComponent } from './dashboard/cadastro/cadastro.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatTableModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'  
+import { NgxMaskModule } from 'ngx-mask'
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     AppRoutingModule,
     HttpClientModule,
     MatTableModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgxMaskModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
